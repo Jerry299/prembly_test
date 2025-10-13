@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "productName": "Pink Gown",
+        "productPrice": 25.99,
+        "productQuantity": 120,
+        "productImageUrl": "https://res.cloudinary.com/jerry299/image/upload/c_scale,h_400,q_36,w_350/v1760350805/pink_gown_yvkcvz.jpg"
+    },
+    {
+        "id": "2",
+        "productName": "Handbag Dior",
+        "productPrice": 59.99,
+        "productQuantity": 75,
+        "productImageUrl": "https://res.cloudinary.com/jerry299/image/upload/c_scale,h_400,q_36,w_350/v1760350803/dior_bag_j2upll.jpg"
+    },
+    {
+        "id": "3",
+        "productName": "Red Jacket",
+        "productPrice": 18.50,
+        "productQuantity": 200,
+        "productImageUrl": "https://res.cloudinary.com/jerry299/image/upload/c_scale,h_400,q_36,w_350/v1760350803/jacket_vcy5sk.png"
+    },
+    {
+        "id": "4",
+        "productName": "Black Laced Shoes",
+        "productPrice": 34.99,
+        "productQuantity": 60,
+        "productImageUrl": "https://res.cloudinary.com/jerry299/image/upload/c_scale,h_400,q_36,w_350/v1760350691/shoe_black_dtfi58.jpg"
+    },
+    {
+        "id": "5",
+        "productName": "Sneakers Nike",
+        "productPrice": 89.99,
+        "productQuantity": 40,
+        "productImageUrl": "https://res.cloudinary.com/jerry299/image/upload/c_scale,h_400,q_36,w_350/v1760350686/white_boot_gclfmu.jpg"
+    },
+    {
+        "id": "6",
+        "productName": "Denim Pile",
+        "productPrice": 249.99,
+        "productQuantity": 30,
+        "productImageUrl": "https://res.cloudinary.com/jerry299/image/upload/c_scale,h_400,q_36,w_350/v1760350681/denimpile_aiswv1.jpg"
+    },
+    {
+        "id": "7",
+        "productName": "Ade Leather Bag",
+        "productPrice": 49.99,
+        "productQuantity": 85,
+        "productImageUrl": "https://res.cloudinary.com/jerry299/image/upload/c_scale,h_400,q_36,w_350/v1566285487/samples/ecommerce/leather-bag-gray.jpg"
+    },
+    {
+        "id": "8",
+        "productName": "White Flare Top",
+        "productPrice": 99.99,
+        "productQuantity": 50,
+        "productImageUrl": "https://res.cloudinary.com/jerry299/image/upload/c_scale,h_400,q_36,w_350/v1760350691/flare_top_xef0wl.jpg"
+    }
+]
