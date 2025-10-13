@@ -1,6 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import AppButton from "../button/ButtonComponent";
-import { addToCart } from "../../../globalRedux/slices/cartSlice";
+import {
+  addToCart,
+  calculateTotal,
+} from "../../../globalRedux/slices/cartSlice";
 import { useNavigate } from "react-router";
 import { toast } from "sonner";
 
@@ -24,7 +27,7 @@ const ProductCard = ({
   const cart = useSelector((state: any) => state.cart.cartItems);
   const qtyCountInCart = cart.filter((item: any) => item.id === id)[0]
     ?.productQtyInCart;
-  console.log("currentProductInCart", qtyCountInCart);
+
   const data = {
     productName,
     productPrice,
@@ -37,6 +40,12 @@ const ProductCard = ({
 
   const handleAddToCart = () => {
     dispatch(addToCart(data));
+    dispatch(
+      calculateTotal({
+        productName,
+        total: data.productPrice * data.productQtyInCart,
+      })
+    );
     toast.success(
       "Item added to cart, click the product image to view/add more items"
     );

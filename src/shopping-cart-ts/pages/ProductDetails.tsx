@@ -10,6 +10,7 @@ import {
   increaseItemInCart,
   addToCart,
   decreaseItemInCart,
+  calculateTotal,
 } from "../../globalRedux/slices/cartSlice";
 interface ProductCardProps {
   productName: string;
@@ -64,6 +65,25 @@ const ProductDetails = () => {
     fetchProducts();
   }, []);
 
+  const handleMinus = () => {
+    dispatch(decreaseItemInCart(dataDecrease));
+    dispatch(
+      calculateTotal({
+        productName: data.productName,
+        total: data.productPrice * dataDecrease.productQtyInCart,
+      })
+    );
+  };
+  const handleAdd = () => {
+    dispatch(increaseItemInCart(product));
+    dispatch(
+      calculateTotal({
+        productName: data.productName,
+        total: data.productPrice * data.productQtyInCart,
+      })
+    );
+  };
+
   return (
     <div className="">
       {loading && <Loader />}
@@ -105,7 +125,7 @@ const ProductDetails = () => {
                 size={35}
                 color="#F3000B"
                 className="cursor-pointer"
-                onClick={() => dispatch(decreaseItemInCart(dataDecrease))}
+                onClick={() => handleMinus()}
               />
               <Spacer width={10} />
               <span>{qtyCountInCart || 0}</span>
@@ -114,7 +134,7 @@ const ProductDetails = () => {
                 size={35}
                 color="#F3000B"
                 className="cursor-pointer"
-                onClick={() => dispatch(increaseItemInCart(product))}
+                onClick={() => handleAdd()}
               />
             </div>
           </>

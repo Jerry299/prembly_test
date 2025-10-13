@@ -15,6 +15,12 @@ interface CartItem {
 const Cart = () => {
   const navigate = useNavigate();
   const cart = useSelector((state: any) => state.cart.cartItems);
+
+  const totalAmount = cart.reduce(
+    (item: any, accumulator: number) => item.currentTotal + accumulator,
+    0
+  );
+  console.log("total Amount ", totalAmount);
   return (
     <div>
       <div
@@ -41,7 +47,7 @@ const Cart = () => {
                 id={item.id}
               />
             ))}
-            <DisplayTotalAmount totalAmount={200} />
+            <DisplayTotalAmount totalAmount={totalAmount} />
           </div>
         )}
       </div>
