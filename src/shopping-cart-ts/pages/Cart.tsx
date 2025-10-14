@@ -17,10 +17,10 @@ const Cart = () => {
   const cart = useSelector((state: any) => state.cart.cartItems);
 
   const totalAmount = cart.reduce(
-    (item: any, accumulator: number) => item.currentTotal + accumulator,
+    (accumulator: number, item: any) => item.currentTotal + accumulator,
     0
   );
-  console.log("total Amount ", totalAmount);
+
   return (
     <div>
       <div

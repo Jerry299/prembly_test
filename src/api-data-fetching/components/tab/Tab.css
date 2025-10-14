@@ -1,0 +1,46 @@
+.tab-container {
+  width: 100%;
+  position: relative;
+}
+
+.tab-list {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ebebf0;
+  gap: 1.6rem;
+  padding-bottom: 8px;
+  list-style-type: none;
+  /* overflow-x: auto; */
+}
+.tab-item {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6b7280;
+  padding-top: 30px;
+  cursor: pointer;
+  word-break: keep-all;
+}
+.isSelected {
+  color: #00622a;
+  border-bottom: 5px solid #00622a;
+  padding-bottom: 7px;
+  animation: slide-in 0.7s ease-in;
+}
+@keyframes slide-in {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .tab-item {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6b7280;
+    padding-top: 30px;
+    cursor: pointer;
+  }
+}
