@@ -6,7 +6,7 @@ This is a React.js application project set up using Vite as the build tool. The 
 
 In the `index.html` file, there are two script tags:
 
-- `main.ts` handles the mock data JSON version of the app.
+- `main.tsx` handles the mock data JSON version of the app.
 - `main2.tsx` handles the API data fetching version of the app.
 
 This separation allows the project to demonstrate two approaches to data handling within the same codebase.
