@@ -4,6 +4,13 @@
 
 This is a React.js application project set up using Vite as the build tool. The app uses local mock data stored in a JSON file and contains two versions of a shopping cart feature: one implemented with TypeScript and the other with JavaScript.
 
+In the `index.html` file, there are two script tags:
+
+- `main.ts` handles the mock data JSON version of the app.
+- `main2.tsx` handles the API data fetching version of the app.
+
+This separation allows the project to demonstrate two approaches to data handling within the same codebase.
+
 ## Setup Instructions ⚙️
 
 ### Prerequisites
