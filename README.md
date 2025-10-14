@@ -43,4 +43,5 @@ Make sure you have [Node.js](https://nodejs.org/) installed (recommended version
 
 ## Screenshots (Optional) 📷
 
-_Add screenshots here to showcase your app’s UI and features._
+<img width="1900" height="982" alt="image" src="https://github.com/user-attachments/assets/4edc4fb1-c14d-49bf-80a8-8e6fbbdc4b12" />
+
