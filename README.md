@@ -4,10 +4,10 @@
 
 This is a React.js application project set up using Vite as the build tool. The app uses local mock data stored in a JSON file and contains two versions of a shopping cart feature: one implemented with TypeScript and the other with JavaScript.
 
-In the `index.html` file, there are two script tags:
+In the `index.html` file, there are two script tags, only one should be active, the out should be commented out as they are both entry points:
 
 - `main.tsx` handles the mock data JSON version of the app.
-- `main2.tsx` handles the API data fetching version of the app.
+- `main2.tsx` handles the API data fetching version of the app. - this one is commented out by default.
 
 This separation allows the project to demonstrate two approaches to data handling within the same codebase.
 
