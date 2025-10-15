@@ -48,7 +48,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed (recommended version
     - `components` — Chakra UI components.
     - `globalRedux` — Redux store.
 
-## Screenshots (Optional) 📷
-
+## Screenshots  📷
+  - `The first screenshot is from main.tsx`
 <img width="1900" height="982" alt="image" src="https://github.com/user-attachments/assets/4edc4fb1-c14d-49bf-80a8-8e6fbbdc4b12" />
 
