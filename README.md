@@ -4,7 +4,7 @@
 
 This is a React.js application project set up using Vite as the build tool. The app uses local mock data stored in a JSON file and contains two versions of a shopping cart feature: one implemented with TypeScript and the other with JavaScript.
 
-In the `index.html` file, there are two script tags, only one should be active, the out should be commented out as they are both entry points:
+In the `index.html` file, there are two script tags, only one should be active, the other should be commented out as they are both entry points to the shopping app andd:
 
 - `main.tsx` handles the mock data JSON version of the app.
 - `main2.tsx` handles the API data fetching version of the app. - this one is commented out by default.
